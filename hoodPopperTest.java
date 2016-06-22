@@ -26,9 +26,9 @@ public class hoodPopperTest {
 	
 	/*
 	Scenario 1
-	Given that the program contains a multiplication using the “*” operator
+	Given that the program contains a multiplication using the â€œ*â€ operator
 	When I check the compile output
-	Then the “opt_mlt” operation should be called
+	Then the â€œopt_multâ€ operation should be called
 	*/
 	@Test
 	public void testHasMultOperator(){
@@ -41,9 +41,9 @@ public class hoodPopperTest {
 	}
 	/*
 	Scenario 2:
-	Given that the program contains an addition and a subtraction using the “+” and “-“ operators respectively
+	Given that the program contains an addition and a subtraction using the â€œ+â€ and â€œ-â€œ operators respectively
 	When I check the compile output
-	Then the “opt_plus” and “opt_minus” operations should be called
+	Then the â€œopt_plusâ€ and â€œopt_minusâ€ operations should be called
 	 */
 	@Test
 	public void testHasAddAndSubOperator(){
@@ -71,9 +71,9 @@ public class hoodPopperTest {
 	
 	/*
 	 Scenario 4:
-	Given that the program contains a variable “a” that is initialized to 5
+	Given that the program contains a variable â€œaâ€ that is initialized to 5
 	When I check the compile output
-	Then the “putobject” operation should be called on 5
+	Then the â€œputobjectâ€ operation should be called
 	 */
 	@Test
 	public void testHasObject(){
@@ -94,9 +94,9 @@ public class hoodPopperTest {
 	
 	/*
 	Scenario 1:
-	Given that the programs contains the “puts” function
+	Given that the programs contains the â€œputsâ€ function
 	When I check the tokenize output
-	Then the “puts” function should be identified with the “:on_ident” identifier
+	Then the â€œputsâ€ function should be identified with the â€œon_identâ€ identifier
 	 */
 	@Test
 	public void testHasPuts(){
@@ -110,9 +110,9 @@ public class hoodPopperTest {
 	
 	/*
 	Scenario 2:
-	Given that the program contains two variables “a” and “b”
+	Given that the program contains two variables â€œaâ€ and â€œbâ€
 	When I check the tokenize output
-	Then the variables “a” and “b” should each be identified with the “:on_ident” identifier
+	Then the variables â€œaâ€ and â€œbâ€ should each be identified with the â€œon_identâ€ identifier
 	 */
 	@Test
 	public void testHasIdentifier(){
@@ -126,7 +126,7 @@ public class hoodPopperTest {
 	Scenario 3:
 	Given that the program contains no functions or variables
 	When I check the tokenize output
-	Then there should be no “:on_ident” identifiers 
+	Then there should be no â€œon_identâ€ identifiers 
 
 	 */
 	@Test
@@ -140,7 +140,7 @@ public class hoodPopperTest {
 	Scenario 4:
 	Given that the program contains a new line
 	When I check the tokenize output
-	Then there should be a “:on_nl” identifier
+	Then there should be a â€œon_nlâ€ identifier
 	 */
 	@Test
 	public void testHasNewLine(){
@@ -160,9 +160,9 @@ public class hoodPopperTest {
 	
 	/*
 	Scenario 1:
-	Given that the program contains a “puts” function
+	Given that the program contains a â€œputsâ€ function
 	When I check the parse output 
-	Then the “puts” function should appear in the AST
+	Then the â€œputsâ€ function should appear in the AST
 	 */
 	@Test
 	public void testPutsInAST(){
